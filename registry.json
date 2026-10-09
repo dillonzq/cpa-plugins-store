@@ -4,7 +4,7 @@
     {
       "id": "cpa-opencode-go",
       "name": "OpenCode Go (cpa-opencode-go)",
-      "description": "通过共享密钥池接入 OpenCode Go，支持 Chat Completions、Messages 和 Responses 协议转换及原生额度查询。",
+      "description": "Connects OpenCode Go through a shared API-key pool with Chat Completions, Messages, and Responses protocol conversion and native quota queries.",
       "author": "dillonzq",
       "repository": "https://github.com/dillonzq/cpa-opencode-go",
       "homepage": "https://github.com/dillonzq/cpa-opencode-go",
