@@ -25,7 +25,7 @@ Restart CPA if the installation result indicates that a restart is required. Fol
 
 | ID | Features | Repository and configuration |
 |---|---|---|
-| `cpa-opencode-go` | Shared OpenCode Go key pool, protocol conversion, and quota queries | [Project and configuration](https://github.com/dillonzq/cpa-opencode-go) |
+| <img src="https://raw.githubusercontent.com/dillonzq/cpa-opencode-go/main/assets/logo.png" width="20" alt=""> `cpa-opencode-go` | Shared OpenCode Go key pool, protocol conversion, and quota queries | [Project and configuration](https://github.com/dillonzq/cpa-opencode-go) |
 
 Before migrating from `opencode-go-cliproxyapi`, read the plugin repository's migration instructions. Avoid enabling two plugins that register the same provider.
 
@@ -33,6 +33,7 @@ Before migrating from `opencode-go-cliproxyapi`, read the plugin repository's mi
 
 The registry uses the official `schema_version: 1` format. GitHub Release entries resolve the latest public stable release from each plugin repository, so publishing a new plugin version does not require changing a version number in this registry.
 When adding a plugin, provide `id`, `name`, `description`, `author`, and `repository`. The plugin ID must match the library's metadata.
+The optional `logo` field points at an image hosted in the plugin's own repository, so the icon stays under the plugin author's control. For example, `https://raw.githubusercontent.com/<owner>/<repo>/main/assets/logo.png`.
 Each plugin release must include `<id>_<version>_<goos>_<goarch>.zip` archives and `checksums.txt`.
 
 See the [official plugin store](https://github.com/router-for-me/CLIProxyAPI-Plugins-Store) for the registry and release formats.

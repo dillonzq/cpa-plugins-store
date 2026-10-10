@@ -25,7 +25,7 @@ CPA 会选择当前系统和架构的发布包、校验 SHA256 并安装，无�
 
 | ID | 功能 | 仓库与配置 |
 |---|---|---|
-| `cpa-opencode-go` | OpenCode Go 共享密钥池、多协议转换及额度查询 | [项目与配置说明](https://github.com/dillonzq/cpa-opencode-go) |
+| <img src="https://raw.githubusercontent.com/dillonzq/cpa-opencode-go/main/assets/logo.png" width="20" alt=""> `cpa-opencode-go` | OpenCode Go 共享密钥池、多协议转换及额度查询 | [项目与配置说明](https://github.com/dillonzq/cpa-opencode-go) |
 
 从旧的 `opencode-go-cliproxyapi` 迁移前，请阅读插件仓库的迁移说明，避免同时启用两个注册相同服务商的插件。
 
@@ -33,6 +33,7 @@ CPA 会选择当前系统和架构的发布包、校验 SHA256 并安装，无�
 
 注册表采用官方 `schema_version: 1` 格式。GitHub Release 类型的条目从插件仓库读取最新公开稳定版本，因此日常发布新版无需修改注册表版本号。
 新增插件时填写 `id`、`name`、`description`、`author` 和 `repository`；插件 ID 应与动态库的元数据一致。
+可选的 `logo` 字段指向插件仓库内托管的图片，图标由插件作者自行维护，例如 `https://raw.githubusercontent.com/<owner>/<repo>/main/assets/logo.png`。
 插件发布需包含 `<id>_<version>_<goos>_<goarch>.zip` 和 `checksums.txt`。
 
 格式参考：[官方插件商店](https://github.com/router-for-me/CLIProxyAPI-Plugins-Store)。
