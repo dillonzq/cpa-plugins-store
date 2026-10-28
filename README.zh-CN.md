@@ -2,12 +2,17 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-由 [dillonzq](https://github.com/dillonzq) 维护的 CLIProxyAPI 自定义插件源。
-本仓库维护 `registry.json`；插件源码、动态库和校验文件由各插件仓库的 GitHub Releases 提供。
+由 [dillonzq](https://github.com/dillonzq) 维护的 [CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI) 自定义插件源。本仓库仅维护注册表，插件源码和发布产物由各插件仓库提供。
+
+## 收录插件
+
+| 插件 | ID | 简介 |
+|---|---|---|
+| <img src="https://raw.githubusercontent.com/dillonzq/cpa-opencode-go/main/assets/logo.png" width="20" alt=""> [OpenCode Go](https://github.com/dillonzq/cpa-opencode-go) | `cpa-opencode-go` | 共享 API 密钥池、自动模型发现、OpenAI/Anthropic/Gemini 协议转换、流式响应、思考与推理及原生额度查询。 |
 
 ## 使用
 
-使用支持动态插件的 CLIProxyAPI v8.0.0 或更高版本，并在现有 `config.yaml` 的 `plugins` 节中合并以下设置：
+需要支持插件的 CLIProxyAPI v8.0.0 或更高版本。将以下设置合并到现有 `config.yaml`，保留已有插件配置和其他插件源：
 
 ```yaml
 plugins:
@@ -16,27 +21,11 @@ plugins:
     - https://raw.githubusercontent.com/dillonzq/cpa-plugins-store/main/registry.json
 ```
 
-保留已有的 `plugins.configs`、`plugins.dir` 和其他插件源设置。
-配置生效后，在支持插件商店的管理界面刷新列表，找到插件并执行安装。
-CPA 会选择当前系统和架构的发布包、校验 SHA256 并安装，无需手动下载动态库。
-如安装结果提示需要重启，请重启 CPA。插件密钥及其他配置按对应插件的 README 设置。
+在管理界面刷新插件商店并安装插件，随后按插件仓库的文档完成配置。如提示需要重启，请重启 CPA。
 
-## 插件
+## 注册表
 
-| ID | 功能 | 仓库与配置 |
-|---|---|---|
-| <img src="https://raw.githubusercontent.com/dillonzq/cpa-opencode-go/main/assets/logo.png" width="20" alt=""> `cpa-opencode-go` | OpenCode Go 共享密钥池、多协议转换及额度查询 | [项目与配置说明](https://github.com/dillonzq/cpa-opencode-go) |
-
-从旧的 `opencode-go-cliproxyapi` 迁移前，请阅读插件仓库的迁移说明，避免同时启用两个注册相同服务商的插件。
-
-## 维护
-
-注册表采用官方 `schema_version: 1` 格式。GitHub Release 类型的条目从插件仓库读取最新公开稳定版本，因此日常发布新版无需修改注册表版本号。
-新增插件时填写 `id`、`name`、`description`、`author` 和 `repository`；插件 ID 应与动态库的元数据一致。
-可选的 `logo` 字段指向插件仓库内托管的图片，图标由插件作者自行维护，例如 `https://raw.githubusercontent.com/<owner>/<repo>/main/assets/logo.png`。
-插件发布需包含 `<id>_<version>_<goos>_<goarch>.zip` 和 `checksums.txt`。
-
-格式参考：[官方插件商店](https://github.com/router-for-me/CLIProxyAPI-Plugins-Store)。
+[`registry.json`](registry.json) 遵循[官方注册表格式](https://github.com/router-for-me/CLIProxyAPI-Plugins-Store#registry-format)。插件从各自仓库的最新稳定版 GitHub Releases 安装，本仓库不固定版本号。
 
 ## License
 

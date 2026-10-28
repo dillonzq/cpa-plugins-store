@@ -3,16 +3,18 @@
   "plugins": [
     {
       "id": "cpa-opencode-go",
-      "name": "OpenCode Go (cpa-opencode-go)",
-      "description": "Connects OpenCode Go through a shared API-key pool with Chat Completions, Messages, and Responses protocol conversion and native quota queries.",
+      "name": "OpenCode Go",
+      "description": "Adds OpenCode Go as a single CLIProxyAPI provider with dynamic model discovery and a shared API-key pool. Selects native protocols or translates between OpenAI Chat Completions, OpenAI Responses, Anthropic Messages, and Gemini GenerateContent, with streaming and reasoning support. Uses CLIProxyAPI for key rotation, retries, cooldowns, and rolling, weekly, and monthly quota queries.",
       "author": "dillonzq",
       "repository": "https://github.com/dillonzq/cpa-opencode-go",
       "logo": "https://raw.githubusercontent.com/dillonzq/cpa-opencode-go/main/assets/logo.png",
       "homepage": "https://github.com/dillonzq/cpa-opencode-go",
       "license": "MIT",
       "tags": [
-        "provider",
-        "OpenCode Go"
+        "Provider",
+        "OpenCode Go",
+        "Protocol Translation",
+        "Quota"
       ]
     }
   ]

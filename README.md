@@ -2,12 +2,17 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-A custom CLIProxyAPI plugin store maintained by [dillonzq](https://github.com/dillonzq).
-This repository maintains `registry.json`. Plugin source code, shared libraries, and checksums are hosted in each plugin repository's GitHub Releases.
+A custom [CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI) plugin registry maintained by [dillonzq](https://github.com/dillonzq). This repository hosts the registry; plugin source code and release artifacts live in each plugin's repository.
+
+## Included plugins
+
+| Plugin | ID | Description |
+|---|---|---|
+| <img src="https://raw.githubusercontent.com/dillonzq/cpa-opencode-go/main/assets/logo.png" width="20" alt=""> [OpenCode Go](https://github.com/dillonzq/cpa-opencode-go) | `cpa-opencode-go` | Shared API keys, automatic model discovery, OpenAI/Anthropic/Gemini protocol conversion, streaming, reasoning, and native quota queries. |
 
 ## Usage
 
-Use CLIProxyAPI v8.0.0 or later with dynamic plugin support. Merge the following settings into the `plugins` section of your existing `config.yaml`:
+Requires CLIProxyAPI v8.0.0 or later with plugin support. Merge the following settings into your existing `config.yaml`, preserving any configured plugin settings and other store sources:
 
 ```yaml
 plugins:
@@ -16,27 +21,11 @@ plugins:
     - https://raw.githubusercontent.com/dillonzq/cpa-plugins-store/main/registry.json
 ```
 
-Keep your existing `plugins.configs`, `plugins.dir`, and other store sources.
-Once the configuration takes effect, refresh the plugin list in a management interface that supports the plugin store, find the plugin, and install it.
-CPA selects the release archive for the host's operating system and architecture, verifies its SHA256 checksum, and installs the library automatically.
-Restart CPA if the installation result indicates that a restart is required. Follow the plugin's README to configure credentials and other settings.
+Refresh the plugin store in your management interface, install the plugin, and follow its repository's configuration guide. Restart CPA if prompted.
 
-## Plugins
+## Registry
 
-| ID | Features | Repository and configuration |
-|---|---|---|
-| <img src="https://raw.githubusercontent.com/dillonzq/cpa-opencode-go/main/assets/logo.png" width="20" alt=""> `cpa-opencode-go` | Shared OpenCode Go key pool, protocol conversion, and quota queries | [Project and configuration](https://github.com/dillonzq/cpa-opencode-go) |
-
-Before migrating from `opencode-go-cliproxyapi`, read the plugin repository's migration instructions. Avoid enabling two plugins that register the same provider.
-
-## Maintenance
-
-The registry uses the official `schema_version: 1` format. GitHub Release entries resolve the latest public stable release from each plugin repository, so publishing a new plugin version does not require changing a version number in this registry.
-When adding a plugin, provide `id`, `name`, `description`, `author`, and `repository`. The plugin ID must match the library's metadata.
-The optional `logo` field points at an image hosted in the plugin's own repository, so the icon stays under the plugin author's control. For example, `https://raw.githubusercontent.com/<owner>/<repo>/main/assets/logo.png`.
-Each plugin release must include `<id>_<version>_<goos>_<goarch>.zip` archives and `checksums.txt`.
-
-See the [official plugin store](https://github.com/router-for-me/CLIProxyAPI-Plugins-Store) for the registry and release formats.
+[`registry.json`](registry.json) follows the [official registry format](https://github.com/router-for-me/CLIProxyAPI-Plugins-Store#registry-format). Plugins are installed from their repositories' latest stable GitHub Releases; versions are not pinned here.
 
 ## License
 
