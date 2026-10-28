@@ -16,6 +16,54 @@
         "Protocol Translation",
         "Quota"
       ]
+    },
+    {
+      "id": "cpa-opencode",
+      "name": "OpenCode",
+      "description": "Adds OpenCode pay-as-you-go as a single CLIProxyAPI provider with dynamic model discovery and a shared API-key pool. Supports OpenAI Chat Completions, OpenAI Responses, Anthropic Messages, and Gemini GenerateContent, with native routing, protocol conversion, streaming, and reasoning. Uses CLIProxyAPI for key rotation, retries, and cooldowns, with member budget, balance, and available-credit queries.",
+      "author": "dillonzq",
+      "repository": "https://github.com/dillonzq/cpa-opencode",
+      "logo": "https://raw.githubusercontent.com/dillonzq/cpa-opencode/main/assets/logo.png",
+      "homepage": "https://github.com/dillonzq/cpa-opencode",
+      "license": "MIT",
+      "tags": [
+        "Provider",
+        "OpenCode",
+        "Protocol Translation",
+        "Quota"
+      ]
+    },
+    {
+      "id": "cpa-minimax",
+      "name": "MiniMax",
+      "description": "Adds MiniMax subscription and pay-as-you-go APIs as a single CLIProxyAPI provider with international and China mainland credentials in one pool. Supports OpenAI Chat Completions, OpenAI Responses, Anthropic Messages, and Gemini GenerateContent, with streaming and thinking controls. Uses CLIProxyAPI for subscription-first scheduling, key rotation, retries, and cooldowns, with rolling and weekly subscription quota queries.",
+      "author": "dillonzq",
+      "repository": "https://github.com/dillonzq/cpa-minimax",
+      "logo": "https://raw.githubusercontent.com/dillonzq/cpa-minimax/main/assets/logo.png",
+      "homepage": "https://github.com/dillonzq/cpa-minimax",
+      "license": "MIT",
+      "tags": [
+        "Provider",
+        "MiniMax",
+        "Protocol Translation",
+        "Quota"
+      ]
+    },
+    {
+      "id": "cpa-deepseek",
+      "name": "DeepSeek",
+      "description": "Adds the official DeepSeek API as a single CLIProxyAPI provider with dynamic model discovery and a shared API-key pool. Supports native OpenAI Chat Completions, OpenAI Responses, and Anthropic Messages, plus Gemini GenerateContent conversion, with streaming, tools, and reasoning. Uses CLIProxyAPI for key rotation, retries, and cooldowns, with selected-credential account balance queries and separate CNY/USD summaries.",
+      "author": "dillonzq",
+      "repository": "https://github.com/dillonzq/cpa-deepseek",
+      "logo": "https://api-docs.deepseek.com/img/favicon.svg",
+      "homepage": "https://github.com/dillonzq/cpa-deepseek",
+      "license": "MIT",
+      "tags": [
+        "Provider",
+        "DeepSeek",
+        "Protocol Translation",
+        "Quota"
+      ]
     }
   ]
 }

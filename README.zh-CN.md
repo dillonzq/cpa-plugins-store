@@ -9,6 +9,9 @@
 | 插件 | ID | 简介 |
 |---|---|---|
 | <img src="https://raw.githubusercontent.com/dillonzq/cpa-opencode-go/main/assets/logo.png" width="20" alt=""> [OpenCode Go](https://github.com/dillonzq/cpa-opencode-go) | `cpa-opencode-go` | 共享 API 密钥池、自动模型发现、OpenAI/Anthropic/Gemini 协议转换、流式响应、思考与推理及原生额度查询。 |
+| <img src="https://raw.githubusercontent.com/dillonzq/cpa-opencode/main/assets/logo.png" width="20" alt=""> [OpenCode](https://github.com/dillonzq/cpa-opencode) | `cpa-opencode` | 按量付费接入、共享 API 密钥池、自动模型发现、OpenAI/Anthropic/Gemini 协议支持、流式响应、思考与推理及预算和余额查询。 |
+| <img src="https://raw.githubusercontent.com/dillonzq/cpa-minimax/main/assets/logo.png" width="20" alt=""> [MiniMax](https://github.com/dillonzq/cpa-minimax) | `cpa-minimax` | 订阅与按量付费密钥、国际及中国大陆凭证池、OpenAI/Anthropic/Gemini 协议支持、流式响应、思考控制及订阅额度查询。 |
+| <img src="https://api-docs.deepseek.com/img/favicon.svg" width="20" alt=""> [DeepSeek](https://github.com/dillonzq/cpa-deepseek) | `cpa-deepseek` | 官方 API 接入、共享 API 密钥池、自动模型发现、OpenAI/Anthropic/Gemini 协议支持、流式响应、思考与推理及账户余额查询。 |
 
 ## 使用
 

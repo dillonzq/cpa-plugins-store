@@ -9,6 +9,9 @@ A custom [CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI) plugin regi
 | Plugin | ID | Description |
 |---|---|---|
 | <img src="https://raw.githubusercontent.com/dillonzq/cpa-opencode-go/main/assets/logo.png" width="20" alt=""> [OpenCode Go](https://github.com/dillonzq/cpa-opencode-go) | `cpa-opencode-go` | Shared API keys, automatic model discovery, OpenAI/Anthropic/Gemini protocol conversion, streaming, reasoning, and native quota queries. |
+| <img src="https://raw.githubusercontent.com/dillonzq/cpa-opencode/main/assets/logo.png" width="20" alt=""> [OpenCode](https://github.com/dillonzq/cpa-opencode) | `cpa-opencode` | Pay-as-you-go access, shared API keys, automatic model discovery, OpenAI/Anthropic/Gemini protocol support, streaming, reasoning, and budget/balance queries. |
+| <img src="https://raw.githubusercontent.com/dillonzq/cpa-minimax/main/assets/logo.png" width="20" alt=""> [MiniMax](https://github.com/dillonzq/cpa-minimax) | `cpa-minimax` | Subscription and pay-as-you-go keys, international/China credential pools, OpenAI/Anthropic/Gemini protocol support, streaming, thinking controls, and subscription quota queries. |
+| <img src="https://api-docs.deepseek.com/img/favicon.svg" width="20" alt=""> [DeepSeek](https://github.com/dillonzq/cpa-deepseek) | `cpa-deepseek` | Official API access, shared API keys, automatic model discovery, OpenAI/Anthropic/Gemini protocol support, streaming, reasoning, and account balance queries. |
 
 ## Usage
 
