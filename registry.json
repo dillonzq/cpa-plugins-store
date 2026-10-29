@@ -55,7 +55,7 @@
       "description": "Adds the official DeepSeek API as a single CLIProxyAPI provider with dynamic model discovery and a shared API-key pool. Supports native OpenAI Chat Completions, OpenAI Responses, and Anthropic Messages, plus Gemini GenerateContent conversion, with streaming, tools, and reasoning. Uses CLIProxyAPI for key rotation, retries, and cooldowns, with selected-credential account balance queries and separate CNY/USD summaries.",
       "author": "dillonzq",
       "repository": "https://github.com/dillonzq/cpa-deepseek",
-      "logo": "https://api-docs.deepseek.com/img/favicon.svg",
+      "logo": "https://raw.githubusercontent.com/dillonzq/cpa-deepseek/main/assets/logo.png",
       "homepage": "https://github.com/dillonzq/cpa-deepseek",
       "license": "MIT",
       "tags": [
